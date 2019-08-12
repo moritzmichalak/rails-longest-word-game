@@ -1,0 +1,12 @@
+<h1>Result</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+
+ <% if @include == true
+      if @dictionary== true %>
+        <p>Congratulations! <%= @guess%>  is a valid English word</p>
+      <% else %>
+        <p>Sorry, but <%= @guess%>  does not seem to be a valid english word</p>
+      <% end %>
+    <% else %>
+      <p>Sorry, but <%= @guess%> cannot be built out of <%= @grid%> </p>
+ <% end %>
